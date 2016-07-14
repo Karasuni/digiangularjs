@@ -1,12 +1,12 @@
 // --- FILE my-controller.controller.ts ---
 
-export class MyController {
+class MyController {
 
     static $inject : string[] = ['$scope'];
     constructor(
         protected $scope:ng.IScope
     ) {
-        $scope.test = 'This is scope.test.';
+        $scope['test'] = 'This is scope.test.';
         console.log('MyController initialized.');
     }
 
